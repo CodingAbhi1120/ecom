@@ -9,6 +9,7 @@ section#main-pro-container {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height: 130vh;
 }
 .prot {
     display: flex;
@@ -131,12 +132,13 @@ li{
     margin-left: -47px;
     padding: 5px;
 }
-.contaner{
+.container{
     background-color: bisque;
     height: 80vh;
 }
 img{
     mix-blend-mode: multiply;
+    width: 42%;
 }
 .content{
     padding: 12px;
@@ -145,7 +147,8 @@ img{
     margin-left: 30px;
 }
 .box{
-    font-size: 90px;
+    padding-top: 0%;
+    font-size: 88px;
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -154,12 +157,13 @@ img{
 #shop-logo {
     width: 24vw;
     margin-left: 19%;
-    margin-top: 4%;
+    margin-top: 20%;
     text-align: center;
     background-color: coral;
     border-radius: 100%;
     font-size: 50px;
 }
+
 footer{
     background-color: black;
     color: white;
@@ -188,9 +192,9 @@ footer{
     justify-content: space-around;
 }
 .boxs img{
-    border-radius: 52%;
-    height: 20vh;
-    margin-left: 15%;
+    height: 32vh;
+    width: 77%;
+    margin-left: -10%;
 }
 h2{
     text-align: center;
@@ -198,25 +202,19 @@ h2{
     font-weight: 800; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h3{
-    margin-left:23%;
-}
-.h3{
-    margin-left: 55%;
-}
+
 .boxs-2 img{
     margin-top: 17px;
-    border-radius: 52%;
-    height: 17vh;
-    margin-left: 34%;
-}.save{
-    margin-left: 83%;
+    height: 24vh;
+    width: 98%;
+    margin-left: -17%;
 }
+
 .boxs-3 img{
-    margin-top: 17px;
-    border-radius: 52%;
-    height: 17vh;
-    margin-left: 50%
+    margin-top: 25px;
+    height: 30vh;
+    width: 101%;
+    margin-left: 16%;
 }
 .design{
     margin-top: 17px;

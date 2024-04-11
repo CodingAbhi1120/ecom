@@ -11,8 +11,8 @@ include 'config.php';
 </head>
 <body>
 <footer>
-        <div class="foot">
-            Copyright <?php echo date('Y') ?> Admin ShopEasy
+        <div class="footers">
+            Copyright <?php echo date('Y') ?> Admin ShopEasy.in
         </div>
     </footer>
 </body>

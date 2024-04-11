@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Footer</title>
     <link rel="stylesheet" href="css_folder_for_frent/homestyle.css">
 </head>
 <body>
@@ -16,6 +16,8 @@
             <ul>
                 <li type="none"><a target="_blank" href="https://www.instagram.com/abhi_choudhary_1120/">Instagram <i class="fa-brands fa-instagram"></i></a></li>
                 <li type="none"><a target="_blank" href="https://www.facebook.com/profile.php?id=100025024080223&sk=about_contact_and_basic_info">Facebook<i class="fa-brands fa-facebook"></i></a></li>
+                <li type="none"><a target="_blank" href="https://github.com/CodingAbhi1120">Github<i class="fa-brands fa-github"></i></a></li>
+
            
             </ul>          
         </div>
@@ -36,9 +38,12 @@
             Hoshiarpur,144211,<br>
             Punjab,India
         </div>
+
+        <hr id="copy">
+        <p id="_copyright">&copy; Copyright ShopEasy.in 2024</p>
       
     </footer>   
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="javascript/index.js"></script>   
+<script src="javascript/index.js"></script>
 </html>

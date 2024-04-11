@@ -7,11 +7,12 @@ require('config.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home-page</title>
     <link rel="stylesheet" href="css_folder_for_frent/homestyle.css?v=<?=$version?>">
 </head>
 <body>
-  <div class="contaner">
+  
+  <div class="container">
 <div class="content">
          <img src="image/shopping1.jpeg" alt="shopping">
         <div class="box">
@@ -27,16 +28,16 @@ require('config.php');
       <section id="feature">
         
         <div class="boxs">
-          <img src="image/free.webp" alt="free shipping">
-          <h3> Free shipping</h3>
+          <img src="image/free.jpeg" alt="free shipping">
+          
         </div>
         <div class="boxs-2">
-          <img src="image/24.jpeg" alt="24/7 available">
-          <h3 class="h3">24/7 Available</h3>
+          <img src="image/available.jpeg" alt="24/7 available">
+          
         </div>
         <div class="boxs-3">
-          <img src="image/savemoney.jpeg" alt="save money">
-          <h3 class="save">Save Money</h3>
+          <img src="image/save.jpeg" alt="save money">
+          
         </div>
       </section>
       <div class="design">
@@ -60,8 +61,9 @@ require('config.php');
         </div>
         ";}?>
       </section>
-</body>
-</html>
-<?php
+      <?php
 require('footer.php');
 ?>
+</body>
+</html>
+

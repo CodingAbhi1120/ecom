@@ -8,7 +8,7 @@ $order_id=mysqli_real_escape_string($conn,$_GET['id']);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Myorder_detail</title>
     <link rel="stylesheet" href="css_folder_for_frent/cart.css?v=<?=$version?>">
 </head>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

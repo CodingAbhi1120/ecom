@@ -27,9 +27,9 @@ h1{
     padding: 12px;
 }
 img{
-    margin-left: 35%;
-    margin-top: 12px;
-    height: 15vh;
+    margin-left: 23%;
+    margin-top: 14px;
+    height: 18vh;
 }
 .image{
 background-color: blueviolet;
@@ -126,7 +126,7 @@ form button{
 }
 .footers{
     margin-top: 19.9%;
-    background-color: gray;
+    background-color: black;
     height: 15vh;
     text-align: center;
     color: white;
@@ -164,4 +164,10 @@ span a{
     padding: 12px;
     margin-left: 17%;
     font-size: 1.3rem;
+}
+
+/* manage_product */
+#txt{
+    width: 30%; 
+    height: 16vh;
 }

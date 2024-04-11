@@ -8,7 +8,7 @@ require('config.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <script src="javascript/index.js"></script>
     <link rel="stylesheet" href="css_folder_for_frent/categories.css?v=<?=$version?>">
 </head>

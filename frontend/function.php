@@ -5,7 +5,7 @@ print_r($arr);
 }
 function prx(){
     echo '<pre>';
-    print_r( $arr );
+    print_r($arr);
     die();
 }
 function get_product($conn, $product_id='', $limit=''){
@@ -52,7 +52,7 @@ function get_cat($conn, $limit='', $cat_id = '', $product_id = ''){
         return $data;
     } else {
         echo "query failed" . mysqli_error($conn);
-        return null; // 
+        return null;
 }
 }
 

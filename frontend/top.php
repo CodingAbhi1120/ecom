@@ -49,7 +49,7 @@ FROM product, wishlist where wishlist.product_id= product.id and wishlist.user_i
                 ?>
      
        <li class="contact-btn"><a href="contact.php">Contact</a></li>
-       <?php if(isset($_SESSION['USER_LOGIN'])){
+       <?php if(isset($_SESSION['email'])){
         echo ' <li><a href="logout.php">Logout</a></li><a class="myorder" href="myorder.php">My Order</a>';
        }else{
         echo '<li><a href="login.php">Login</a></li>';

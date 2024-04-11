@@ -1,79 +1,86 @@
 <?php
-require('config.php');
-?>
 
+require('registration.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="css_folder_for_frent/login.css?v=<?=$version?>">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="javascript/index.js"></script>    
+    <title>Register & Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css_folder_for_frent/login.css">
 </head>
 <body>
-<div class="container" id="container">
-        <div class="form-container sign-up">
-            <form id="register-form" method="post">
-                <h1>Create Account</h1>
-               
-                <input type="text" name="name" id="name" placeholder="Name">
-
-                <span class="field_error" id="name_error"></span><br>
-
-                <input type="email" name="email" id="email" placeholder="Email">
-                <span class="field_error" id="email_error"></span><br>
-                <input type="password" name="password" id="password" placeholder="Password">
-                <span class="field_error" id="password_error"></span><br>
-            <button type="button" class="btn4" onclick="user_register()">Register</button>
-          
-            </form>
-            <div class="form-output register_msg">
-                <p class="form_message field_error"></p>
-            </div>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Register</h1>
+      <form method="post" action="registration.php">
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text" name="fName" id="fName" placeholder="First Name" required>
+           <label for="fname">First Name</label>
         </div>
-        <div class="form-container sign-in">
-            <form id="login-form" method="post" >
-                <h1>Sign In</h1>
-            
-                <input type="email" name="login_email" id="login_email" placeholder="Email">
-                <span class="field_error" id="login_email_error"></span><br>
-                <input type="password" name="login_password" id="login_password" placeholder="Password">
-                <span class="field_error" id="login_password_error"></span><br>
-                <a href="#">Forget Your Password?</a>
-                <button type="button" class="btn4" onclick="user_login()">Login</button>
-            </form>
-            <div class="form-output login_msg">
-                <p class="form_message field_error"></p>
-            </div>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+            <label for="lName">Last Name</label>
         </div>
-        <div class="toggle-container">
-            <div class="toggle">
-                <div class="toggle-panel toggle-left">
-                    <h1>Welcome Back!</h1>
-                 
-                    <button class="hidden" id="login">Sign In</button>
-                </div>
-                <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
-                    
-                    <button class="hidden" id="register">Sign Up</button>
-                </div>
-            </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="email">Email</label>
         </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+        </div>
+       <input type="submit" class="btn" value="Sign Up" name="signUp">
+      </form>
+      <p class="or">
+        ----------or--------
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="links">
+        <p>Already Have Account ?</p>
+        <button id="signInButton">Sign In</button>
+      </div>
     </div>
 
-    <script>const container = document.getElementById('container');
-        const registerBtn = document.getElementById('register');
-        const loginBtn = document.getElementById('login');
-        
-        registerBtn.addEventListener('click', () => {
-            container.classList.add("active");
-        });
-        
-        loginBtn.addEventListener('click', () => {
-            container.classList.remove("active");
-        });</script>
+    <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="registration.php">
+          <div class="input-group">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" id="password" placeholder="Password" required>
+              <label for="password">Password</label>
+          </div>
+          <p class="recover">
+            <a href="#">Recover Password</a>
+          </p>
+         <input type="submit" class="btn" value="Sign In" name="signIn">
+        </form>
+        <p class="or">
+          ----------or--------
+        </p>
+        <div class="icons">
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+          <p>Don't have account yet?</p>
+          <button id="signUpButton">Sign Up</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>

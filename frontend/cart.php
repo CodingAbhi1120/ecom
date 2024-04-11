@@ -8,7 +8,7 @@ require('config.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css_folder_for_frent/cart.css?v=<?=$version?>">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="javascript/index.js"></script>   
@@ -38,7 +38,7 @@ require('config.php');
                 $price=$productarr[0]['price'];
                 $image=$productarr[0]['image'];
                 $qty=$val['qty'];
-
+                
             ?>
             <tr>
                 <td class="product-thumbnail"><a href="#"><img src="<?php echo PRODUCT_IMAGE_SITE_PATH .$image ?>" ></a></td>

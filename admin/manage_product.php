@@ -92,7 +92,6 @@ if(isset($_POST['submit'])){
     }
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -106,7 +105,7 @@ if(isset($_POST['submit'])){
 <body>
     <h3 class="high">Product Form</h3>
     <form method="post" enctype="multipart/form-data">
-        <label for="categories">categories</label><br>
+        <label for="categories">Categories</label><br>
 <select name="categories_id" class="labels">
 <option>Select category</option>
 <?php
@@ -121,30 +120,30 @@ while($row=mysqli_fetch_assoc($res)){
 }
 ?>
 </select>
-        <label for="categories">product name</label><br>
+        <label for="categories">Product name</label><br>
         <input type="text" name="name" placeholder="Enter product name" required value = "<?php echo $name ?>"><br>
         
         <label for="categories">MRP</label><br>
         <input type="text" name="mrp" placeholder="Enter product mrp" required value = "<?php echo $mrp ?>"><br>
         <label for="categories">Price</label><br>
         <input type="text" name="price" placeholder="Enter product price" required value = "<?php echo $price ?>"><br>
-        <label for="categories">Quanty</label><br>
+        <label for="categories">Quantity</label><br>
         <input type="text" name="quanty" placeholder="Enter product quanty" required value = "<?php echo $quanty ?>"><br>
         
         <label for="categories">Image</label><br>
         <input type="file" name="image" <?php echo $image_required ?>><br>
         
         <label for="categories">Short Description</label><br>
-        <textarea name="short_descri" placeholder="Enter product short description" required><?php echo $short_desc ?></textarea><br>
+        <textarea id="txt" name="short_descri" placeholder="Enter product short description" required><?php echo $short_desc ?></textarea><br>
         <label for="categories">Description</label><br>
-        <textarea name="description" placeholder="Enter product description" required><?php echo $description ?></textarea><br>
+        <textarea id="txt" name="description" placeholder="Enter product description" required><?php echo $description ?></textarea><br>
 
         <label for="categories">Meta Title</label><br>
-        <textarea name="meta_title" placeholder="Enter product meta title"><?php echo $meta_title ?></textarea><br>
+        <textarea id="txt" name="meta_title" placeholder="Enter product meta title"><?php echo $meta_title ?></textarea><br>
         <label for="categories">Meta Description</label><br>
-        <textarea name="meta_desc" placeholder="Enter product meta_description"><?php echo $meta_desc ?></textarea><br>
+        <textarea id="txt" name="meta_desc" placeholder="Enter product meta_description"><?php echo $meta_desc ?></textarea><br>
         <label for="categories">Meta Keyword</label><br>
-        <textarea name="meta_keyword" placeholder="Enter product meta_keyword"><?php echo $meta_keyword ?></textarea><br>
+        <textarea id="txt" name="meta_keyword" placeholder="Enter product meta_keyword"><?php echo $meta_keyword ?></textarea><br>
         <button type="submit" name="submit">Submit</button>
         <div class="field_error">
 <?php
@@ -153,7 +152,7 @@ while($row=mysqli_fetch_assoc($res)){
     </form>
     <footer>
     <div class="footers">
-            Copyright <?php echo date('Y') ?> Admin ShopEasy
+            Copyright <?php echo date('Y') ?> Admin ShopEasy.in
         </div>
     </footer>
 </body>
