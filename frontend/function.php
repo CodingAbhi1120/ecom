@@ -1,13 +1,4 @@
 <?php
-function pr($arr){
-echo '<pre>';
-print_r($arr);
-}
-function prx(){
-    echo '<pre>';
-    print_r($arr);
-    die();
-}
 function get_product($conn, $product_id='', $limit=''){
     $sql="select * from product where status=1";
 

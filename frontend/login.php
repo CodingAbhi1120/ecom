@@ -81,6 +81,6 @@ require('registration.php');
           <button id="signUpButton">Sign Up</button>
         </div>
       </div>
-      <script src="script.js"></script>
+      <script src="javascript/index.js"></script>
 </body>
 </html>

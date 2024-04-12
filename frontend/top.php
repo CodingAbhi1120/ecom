@@ -10,17 +10,7 @@ $cat_arr[]=$row;
 }
 $obj= new add_to_cart();
 $totalproduct=$obj->totalproduct();
-if(isset($_SESSION['USER_LOGIN'])){
-    $uid=$_SESSION['USER_ID'];
 
-    if(isset($_GET['wishlist_id'])){
-        $wid=$_GET['wishlist_id'];
-      mysqli_query($conn,"delete from wishlist where id='$wid' and user_id='$uid'");
-    }
-
-$wishlist_count=mysqli_num_rows(mysqli_query($conn,"SELECT product.name,product.image,product.price,product.mrp , wishlist.id
-FROM product, wishlist where wishlist.product_id= product.id and wishlist.user_id='$uid'"));
-}
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +18,7 @@ FROM product, wishlist where wishlist.product_id= product.id and wishlist.user_i
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce- ShopEasy.in </title>
+    <title>Ecommerce-ShopEasy.in </title>
     <link rel="stylesheet" href="css_folder_for_frent/homestyle.css?v=<?=$version?>">
     <script src="https://kit.fontawesome.com/2b3f24cffe.js" crossorigin="anonymous"></script>
 </head>

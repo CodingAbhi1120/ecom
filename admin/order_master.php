@@ -34,9 +34,9 @@ $res = mysqli_query($conn,$sql);
             <tbody>
                 <?php
       
-              $sql="SELECT order.*, order_status.name AS order_status_str FROM
-               order , order_status WHERE
-                order_status.id = order.order_status";
+              $sql="SELECT `order`.*, order_status.name AS order_status_str FROM
+               `order` , order_status WHERE
+                order_status.id = `order`.order_status";
                 $res= mysqli_query($conn,$sql);
                 while($row=mysqli_fetch_assoc($res)){
                 ?>

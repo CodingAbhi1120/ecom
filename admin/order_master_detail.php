@@ -4,7 +4,7 @@ require('top.php');
 $order_id=mysqli_real_escape_string($conn,$_GET['id']);
 if(isset($_POST['update_order_status'])){
     $update_order_status=$_POST['update_order_status'];
-    mysqli_query($conn,"update order set order_status='$update_order_status' where id='$order_id';");
+    mysqli_query($conn,"update `order` set order_status='$update_order_status' where id='$order_id';");
 }
 ?>
 <!DOCTYPE html>
@@ -39,8 +39,8 @@ if(isset($_POST['update_order_status'])){
                 $uid=$_SESSION['USER_ID'];
               
               $sql="SELECT DISTINCT(order_details.id), order_details.*, product.name, product.image,
-               order.address, order.city, order.pincode FROM 
-              order_details , product , order WHERE 
+               `order`.address, `order`.city, `order`.pincode FROM 
+              order_details , product , `order` WHERE 
               order_details.order_id = '$order_id'  AND order_details.product_id=product.id";
                 $res= mysqli_query($conn,$sql);
                 $total_price=0;
@@ -76,7 +76,7 @@ if(isset($_POST['update_order_status'])){
             <?php echo $address ?>, <?php echo $city ?>, <?php echo $pincode ?><br><br>
             <strong>Order Status</strong>
             <?php
-            $order_status_arr=mysqli_fetch_assoc(mysqli_query($conn,"select order_status.name from order_status, order where order.id='$order_id' and order.order_status=order_status.id"));
+            $order_status_arr=mysqli_fetch_assoc(mysqli_query($conn,"select order_status.name from order_status, `order` where `order`.id='$order_id' and `order`.order_status=order_status.id"));
             echo $order_status_arr['name'];
             ?>
             <div>
