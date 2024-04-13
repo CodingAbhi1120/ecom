@@ -52,11 +52,12 @@ require('config.php');
       echo"<div class='container-pro'>
             <div class='prot'>
                 <a href='product.php?id=". $list["id"]."'>
-                    <img src='".PRODUCT_IMAGE_SITE_PATH.$list["image"]."' alt='त्रौज़र्स'>
+                    <img src='".PRODUCT_IMAGE_SITE_PATH.$list["image"]."' alt=''>
                 </a>
-                <span class='boxing'> <a href='#'>". $list["name"]."</a></span>
-                    <span class='boxing2'><b>MRP:". $list["mrp"]."</b></span>        
-                   <span><b>PRICE:". $list["price"]."</b></span>        
+                <div class='box1'>
+                <span class='boxing _pr'> <a href='#'>". $list["name"]."</a></span>
+                    <span class='boxing2 _pr'><b>MRP:". $list["mrp"]."</b></span>        
+                   <span class=' _pr'><b>PRICE:". $list["price"]."</b></span></div>        
         </div>  
         </div>
         ";}?>

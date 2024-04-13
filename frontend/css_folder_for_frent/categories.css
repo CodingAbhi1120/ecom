@@ -6,6 +6,9 @@
 #pro{
     display: flex;
 }
+.inner-under{
+    margin-left: -16%;
+}
 .inner_product img{
 height: 70vh;
 width: 100%;
@@ -24,9 +27,12 @@ width: 100%;
     margin: 100px;
 
 }.prot img{
-    height: 48vh;
-    margin-top: 56px;
-    margin-left: 43%;
+    height: 49vh;
+    width: 87%;
+    margin-left: -33%;
+}
+.underpro{
+    margin: 0 41px;
 }
 #content-main{
     display: flex;
@@ -199,6 +205,9 @@ form textarea{
 #men-section{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    height: 130vh;
+    margin-left: 10%;
 }
 .main-pro img{
     height: 63vh;

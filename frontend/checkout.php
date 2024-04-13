@@ -70,7 +70,7 @@ foreach($_SESSION['cart'] as $key=>$val){
     if(!isset($_SESSION['USER_LOGIN'])){
        ?>
     
-    <div class="login2">
+    <!-- <div class="login2">
         Login 
     </div>
     <div class="reg">Register</div>
@@ -108,7 +108,7 @@ foreach($_SESSION['cart'] as $key=>$val){
             <div class="form-input register_msg">
     <p class="form-message field_error"></p>
 </div>
-        </form></div>
+        </form></div> -->
 <?php } ?>
     <div class="your-order">
         <h5>Your Order:</h5>    

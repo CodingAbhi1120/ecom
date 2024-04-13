@@ -31,7 +31,7 @@ $get_cat = get_cat($conn,'', $cat_id,'');
         ?>
         <div class="pro-container">
             <div class="prot">
-                <a href="product.php?id=<?php echo $list['id']?>">
+                <a class="underpro" href="product.php?id=<?php echo $list['id']?>">
                     <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="त्रौज़र्स">
                 </a>
         </div>

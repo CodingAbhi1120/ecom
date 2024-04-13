@@ -10,6 +10,7 @@ section#main-pro-container {
     justify-content: space-around;
     align-items: center;
     height: 130vh;
+    margin-left: 9%;
 }
 .prot {
     display: flex;
@@ -21,6 +22,9 @@ span.boxing a{
     color: black;
     font-size: 1.2rem;
     font-weight: 600;
+}
+._pr{
+    margin-left: 52%;
 }
 .navbar{
     height: 10vh;
@@ -157,36 +161,14 @@ img{
 #shop-logo {
     width: 24vw;
     margin-left: 19%;
-    margin-top: 20%;
+    margin-top: 5%;
     text-align: center;
     background-color: coral;
     border-radius: 100%;
     font-size: 50px;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 170px;
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 0;
-}
-#contact{
-    font-size:25px;
-    font-weight:bolder;
-    display:flex;
-    position: relative;
-    justify-content: left;
-}
-.contact-drop{
-    margin: 7px;
-    display: flex;
-    position: relative;
-    justify-content:left;
-    font-weight:lighter; 
-}
+
 #feature{
     display: flex;
     justify-content: space-around;
@@ -228,13 +210,22 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .prot{
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
-     padding: 12px;
-}.prot img{
-    height: 49vh;
-    margin-top: 56px;
+    padding: 12px;
 }
+.prot img {
+    height: 49vh;
+    width: 97%;
+    margin-left: 28%;
+}
+
+.box1{
+    display: contents;
+    padding-left: -11%;
+}
+
+
 .inner-under a{
     margin-left: 219px;
     color: black;
@@ -258,7 +249,8 @@ h4{
     
 }.wish{
 margin-top: 14px;
-margin-left: 15px;}
+margin-left: 15px;
+}
 
 footer{
     background-color: black;
@@ -276,7 +268,7 @@ footer{
     display:flex;
     position: relative;
     justify-content: left;
-    margin-bottom: 1%;
+    margin-bottom: 0%;
 }
 .contact-drop{
     margin: 7px;
@@ -289,7 +281,7 @@ footer{
 .policy{
     font-size: 25px;
     font-weight: bolder;
-    margin-top: -7%;
+    margin-top: -9%;
     margin-left: -46%;
 }
 .policy-drop{
@@ -302,7 +294,7 @@ footer{
     opacity: 0.8; 
 }
 .addr{
-    margin-top: -10%;
+    margin-top: -11%;
     margin-left: 40%;
     font-size: 25px;
     font-weight: bolder;

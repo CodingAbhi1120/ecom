@@ -54,10 +54,10 @@ $get_product = get_product($conn, $product_id);
     </p>
     
     <div class="sin-description">
-        <p><span>Categories:</span></p><br>
+        <!-- <p><span>Categories:</span></p><br>
         <ul class="men">
             <li><a href="#">men</a></li>
-        </ul>
+        </ul> -->
    
     <div class="add"> <a href="javascript:void(0)" onclick="manage_cart('<?php echo $get_product['0']['id']?>','add')">Add to cart</a></div>
     </div></div></div></div>
