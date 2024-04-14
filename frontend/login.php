@@ -1,7 +1,5 @@
 <?php
-
-require('registration.php');
-
+ require('connection.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +11,7 @@ require('registration.php');
     <link rel="stylesheet" href="css_folder_for_frent/login.css">
 </head>
 <body>
+
     <div class="container" id="signup" style="display:none;">
       <h1 class="form-title">Register</h1>
       <form method="post" action="registration.php">
@@ -41,10 +40,7 @@ require('registration.php');
       <p class="or">
         ----------or--------
       </p>
-      <div class="icons">
-        <i class="fab fa-google"></i>
-        <i class="fab fa-facebook"></i>
-      </div>
+   
       <div class="links">
         <p>Already Have Account ?</p>
         <button id="signInButton">Sign In</button>
@@ -72,10 +68,7 @@ require('registration.php');
         <p class="or">
           ----------or--------
         </p>
-        <div class="icons">
-          <i class="fab fa-google"></i>
-          <i class="fab fa-facebook"></i>
-        </div>
+      
         <div class="links">
           <p>Don't have account yet?</p>
           <button id="signUpButton">Sign Up</button>

@@ -7,16 +7,14 @@
     display: flex;
 }
 .inner-under{
-    margin-left: -16%;
+    margin-left: -10%;
 }
-.inner_product img{
-height: 70vh;
-width: 100%;
-}.inner-under a{
+.inner-under a{
+    display: list-item;
     margin-left: 219px;
     color: black;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .inner1_product img{
     height: 60vh;
@@ -26,9 +24,10 @@ width: 100%;
     width: 18vw;
     margin: 100px;
 
-}.prot img{
+}
+.prot img{
     height: 49vh;
-    width: 87%;
+    width: 70%;
     margin-left: -33%;
 }
 .underpro{
@@ -80,8 +79,9 @@ width: 100%;
 .mrp3{
    margin-top: 8%;
 } .mai{
-    margin-left: 208px;
+    margin-left: 225px;
     margin-top: 13px;
+    font-size:x-large;
 }
 .product-name{
     flex-wrap: wrap;
@@ -167,15 +167,15 @@ width: 100%;
 }
 .h3cont{
     margin-bottom: -8pc;
-   margin-left: 30%;
-   margin-top: 40px;
+    margin-left: 30%;
+    margin-top: 40px;
     font-size: 2rem;
     font-weight: bold;
-    color: blueviolet
+    color: black;
 }
 form{
     background-color: lavender;
-    border: 2px solid blueviolet;
+    border: 2px solid black;
     margin: 171px;
 }
  form input{
@@ -191,10 +191,12 @@ form textarea{
     font-weight: bold;
 }
 .main_products{
+ margin-top: 6%;
  position: relative;
  text-align: center;
  color: rgb(195, 2, 144);
  /* background-color: brown; */
+ display: flow-root;
 }.inner-content{
     position: absolute;
     top: 44%;
@@ -203,11 +205,12 @@ form textarea{
     font-weight: bold;
 }
 #men-section{
-    display: flex;
-    flex-wrap: wrap;
+    display: ruby;
+    height: 220vh;
+    margin-top: -32%;
+    margin-left: 0%;
     align-items: center;
-    height: 130vh;
-    margin-left: 10%;
+    flex-direction: row-reverse;
 }
 .main-pro img{
     height: 63vh;
@@ -215,6 +218,5 @@ form textarea{
     margin-top: 64px;
     border: 2px solid black;
     border-radius: 11px;
-    padding: 14px;
-
+    padding:1 4px;
 }

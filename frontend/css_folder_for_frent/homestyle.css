@@ -7,20 +7,25 @@
 section#main-pro-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    height: 130vh;
-    margin-left: 9%;
+    height: 430vh;
+    margin-left: -1%;
+    margin-top: 15%;
 }
 .prot {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     padding: 12px;
     flex-direction: column;
 }
 span.boxing a{
+    display: list-item;
     color: black;
-    font-size: 1.2rem;
+    width: 185%;
+    margin-left: 31%;
+    font-size: 1rem;
     font-weight: 600;
 }
 ._pr{
@@ -198,6 +203,42 @@ h2{
     width: 101%;
     margin-left: 16%;
 }
+
+.con{
+    width: 100%;
+}
+.con img{
+    width: 100%;
+    opacity: 0.9;
+}
+
+.hh3 h3{
+    background-color: limegreen;
+    width: 17%;
+    height: 62px;
+    padding-top: 2%;
+    padding-left: 62px;
+    margin-top: -59%;
+    margin-left: 3%;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.offerlogo a h3{
+    margin-top: 8%;
+    color: black;
+    background-color: coral;
+    width: 22%;
+    padding-left: 5%;
+    height: 37px;
+    padding-top: 1%;
+    margin-left: 2%;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.extra{
+    height: 88vh;
+}
 .design{
     margin-top: 17px;
 }
@@ -210,13 +251,14 @@ h4{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .prot{
-    display: flex;
+    width: 87%;
+    display: flow;
     flex-wrap: wrap;
-    padding: 12px;
+    padding: 3px;
 }
 .prot img {
     height: 49vh;
-    width: 97%;
+    width: 87%;
     margin-left: 28%;
 }
 
@@ -227,10 +269,10 @@ h4{
 
 
 .inner-under a{
-    margin-left: 219px;
+    margin-left: 207px;
     color: black;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .fa{
     margin-top: 9px;
@@ -244,9 +286,8 @@ h4{
     margin-left: -16px;
 }
 .mai{
-    margin-left: 208px;
+    margin-left: 190px;
     margin-top: 13px;
-    
 }.wish{
 margin-top: 14px;
 margin-left: 15px;
@@ -260,7 +301,7 @@ footer{
     font-size: 25px;
     font-weight: bolder;
     padding: 0;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 .contact{
     font-size:25px;
@@ -302,5 +343,8 @@ footer{
 .addd{
     margin-left: 40%;
     font-weight: lighter;
-    opacity: 0.8;
+    opacity: 0.8;
+}
+#copy{
+    margin-top: 2%;
 }

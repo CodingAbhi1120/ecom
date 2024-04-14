@@ -10,7 +10,7 @@ if(isset($_GET['type']) && $_GET['type']!=''){
         mysqli_query($conn,$delete_sql);
     }
 }
-$sql = "SELECT * FROM users ORDER By id desc" ;
+$sql = "SELECT * FROM `users` ORDER By id desc" ;
 $res = mysqli_query($conn,$sql);
 ?>
 <!DOCTYPE html>
@@ -31,10 +31,10 @@ $res = mysqli_query($conn,$sql);
                 <tr>
                     <th class=" serial">#</th>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Mobile</th>
-                    <th>Date</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>email</th>
+                    <th>password</th>
                     <th></th>
 </tr>
 </thead>
@@ -45,10 +45,10 @@ $res = mysqli_query($conn,$sql);
 <tr>
     <td class="serial"><?php echo $i ?> </td>
     <td><?php echo $row['id']?></td>
-    <td><?php echo $row['name']?></td>
+    <td><?php echo $row['firstName']?></td>
+    <td><?php echo $row['lastName']?></td>
     <td><?php echo $row['email']?></td>
-    <td><?php echo $row['mobile']?></td>
-    <td><?php echo $row['added_on']?></td>
+    <td><?php echo $row['password']?></td>
     <td>
         <?php 
     echo  "<span class ='spbtn'><a href='?type=delete&id=".$row['id']."'>Delete</a></span" ;

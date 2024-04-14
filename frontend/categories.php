@@ -13,10 +13,9 @@ $get_cat = get_cat($conn,'', $cat_id,'');
     <link rel="stylesheet" href="css_folder_for_frent/categories.css?v=<?=$version?>">
 </head>
 <body>
+    <div class="wholebody">
     <div class="main_products">
-        <div class="inner_product">
-            <img src="image/fashion-choice.jpeg" alt="">
-        </div>
+       
         <div class="inner-content">
             <!-- # men wear -->
         </div>
@@ -32,17 +31,18 @@ $get_cat = get_cat($conn,'', $cat_id,'');
         <div class="pro-container">
             <div class="prot">
                 <a class="underpro" href="product.php?id=<?php echo $list['id']?>">
-                    <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="त्रौज़र्स">
+                    <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="">
                 </a>
         </div>
             <div class="inner-under">
                 <span> <a href="#"><?php echo $list['name']?></a></span>
                 <div class="mai">
-                    <span><b>MRP:<?php echo $list['mrp']?></b></span>        
-                   &nbsp;&nbsp;<span><b>PRICE:<?php echo $list['price']?></b></span>        
+                    <span><b>&#8377;<del><?php echo $list['mrp']?></del></b></span>        
+                   &nbsp;&nbsp;<span><b>&#8377;<?php echo $list['price']?></b></span>        
         </div>
             </div>
         </div><?php }?>
+        </div>
     </section>
     <?php
     } else {

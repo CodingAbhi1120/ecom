@@ -3,14 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.inner_product img{
-    height: 70vh;
-    width: 100%;
+
+#content-main{
+    padding-top: 200px;
 }
 table{
     border: 2px solid black;
     margin: 34px;
-  margin-left: 21%;
+    margin-left: 21%;
 }
 table thead tr th{
     border: 2px solid black;
@@ -43,6 +43,7 @@ padding: 12px;
 }.subtotal{
     padding: 12px;
 }body{
+    margin-top: 7vh;
     background-color: whitesmoke;
 }
 .checkout-btn a{
@@ -63,7 +64,7 @@ padding: 12px;
     cursor: pointer;
 }
 .your-order{
-    margin: 6%;
+    margin-top: 10%;
     margin-left: 16%;
     background-color: whitesmoke;
     display: inline-block;
@@ -79,19 +80,22 @@ padding: 12px;
 }
 .single-item-content{
     margin-top: -44%;
-    margin-left: 61%;
+    margin-left: 69%;
 }
 .single-item-content span{
     color: black;
 }.single-item-remove a
 {
-    margin-left: 102%;
+    margin-left: 124%;
     color: black;
+    background: coral;
+    font-size: 3vh;
 }.single-item-remove{
     margin-top: -18%;
 }
 .single-item-thumb img{
-    height: 12vh;
+    height: 22vh;
+    width: 60%;
 }.single-method{
     margin-left: 77%;
     font-size: 1.2rem;
@@ -174,8 +178,8 @@ form{
         cursor: pointer;
     }
     .order-details-count-total{
-        margin-top: -5%;
-    margin-left: 17%;
+        margin-top: 5%;
+        margin-left: 17%;
     }
 
     .address span{
@@ -220,6 +224,7 @@ form{
     .add a{
         color: black;
         margin: 12px;
-    }.product-name1 img{
+    }
+    .product-name1 img{
         height: 12vh;
-    }
+    }

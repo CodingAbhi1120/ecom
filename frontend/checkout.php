@@ -62,9 +62,7 @@ foreach($_SESSION['cart'] as $key=>$val){
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="javascript/index.js"></script>    
 <body>
-<div class="inner_product">
-        <img src="image/fashion-choice.jpeg" alt="">
-    </div>
+
     <?php 
    
     if(!isset($_SESSION['USER_LOGIN'])){

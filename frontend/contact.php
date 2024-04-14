@@ -14,9 +14,7 @@ require('config.php');
 </head>
 <body>
 <div class="main_products">
-    <div class="inner1_product">
-        <img src="image/contact.webp" alt="">
-    </div>
+    
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6771.288258595927!2d75.61391593068848!3d31.943417819124807!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b992eba402989%3A0xecb3054c78e89b2a!2sSwami%20Premanand%20Mahavidyalaya!5e0!3m2!1sen!2sin!4v1707749352665!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   <div class="contact-container">

@@ -23,7 +23,7 @@ require('function.php');
             <img src="img/admin.jpeg" alt=""> <h1>ADMIN </h1></div>
            
             <ul class="list">
-                <li><a href="">Menu:</a></li>
+                <li><a href="menu.php">Menu:</a></li>
             <li><a href="categories.php">Categories Master</a></li>
             <li><a href="product.php">Product Master</a></li>
             <li><a href="order_master.php">Order Master</a></li>

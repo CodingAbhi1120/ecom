@@ -2,22 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box ;
-    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
   body{
-    /* background: url(img/scenary.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center; */
-       display: flex;
+    background-color: azure;
+    display: flex;
+    align-items: center;
     justify-content: center;
-     background-color: rgb(201, 173, 227);
+    flex-direction: column;
+    height: 100vh;
 }
 .login{
     padding: 30px;
-    margin-top: 10%;
-    border: 2px solid rgb(167, 86, 243);
+    margin-top: 0%;
+    border: 2px solid rgb(5, 0, 9);
     border-radius: 10px;
-    /* background-color: aquamarine;    */
+    background-color: rgb(55, 55, 192);
 }
 form{
     margin: 60px;

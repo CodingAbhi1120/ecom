@@ -17,10 +17,7 @@ $get_product = get_product($conn, $product_id);
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="javascript/index.js"></script> 
 <body>
-<div class="main_products">
-    <div class="inner_product">
-        <img src="image/fashion-choice.jpeg" alt="">
-    </div>
+
   </div>
   <section id="content-main">
     <div class="main-pro">

@@ -58,7 +58,7 @@ Do you accept payment made by credit/debit cards issued in other countries?</h2>
 
 <h2>Contact Us</h2>
 
-<h3>Couldn't find the information you need? Please <a href="#">Contact Us</a></h3>
+<h3>Couldn't find the information you need? Please <a href="contact.php">Contact Us</a></h3>
 <button id="back-button">Back to Home page</button>
 <script>
     document.getElementById("back-button").addEventListener("click", function() {

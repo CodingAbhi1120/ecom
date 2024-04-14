@@ -46,7 +46,7 @@ $totalproduct=$obj->totalproduct();
        }?>
       <!-- <div class="serch">
                            
-                <input type="text" name="str" id="inbtn" placeholder="ShopEasy.in"><button class="btn">Search <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                <input type="text" name="str" id="inbtn" placeholder="ShopEasy.in"><button class="btn"> <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
 
             </div> -->
             </ul>

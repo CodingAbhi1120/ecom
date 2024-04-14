@@ -13,10 +13,8 @@ require('config.php');
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="javascript/index.js"></script>   
 </head>
-<body> <section id="content-main">
-<div class="inner_product">
-        <img src="image/fashion-choice.jpeg" alt="">
-    </div>
+<body> 
+    <section id="content-main">
     <div class="table">
     <table>
         <thead>

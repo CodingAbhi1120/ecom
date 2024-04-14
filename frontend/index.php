@@ -24,24 +24,33 @@ require('config.php');
         </div>
       </div>
       </div>
-      <div class="cont"><h2>Features</h2></div>
+    
       <section id="feature">
-        
         <div class="boxs">
           <img src="image/free.jpeg" alt="free shipping">
-          
         </div>
         <div class="boxs-2">
           <img src="image/available.jpeg" alt="24/7 available">
-          
         </div>
         <div class="boxs-3">
           <img src="image/save.jpeg" alt="save money">
-          
         </div>
       </section>
-      <div class="design">
-        <h4>New Arivals</h4></div>
+      
+      <section id="fun">
+        <div class="con">
+          <img src="image/shopping2.jpeg" alt="">
+         <h1 style="width:43%; margin-left:31%;font-size: 12vh;margin-top: -40%;opacity: 0.6;background: cornsilk;">Fashion Trends</h1>
+         <h2 style="width: 68%;font-size: 4.5em;margin-top: 33%; margin-left: 18%;background: darkgrey;">Gets our latest 2024 collection</h2>
+         <span class="hh3"><h3>30% off on New Arrival</h3></span>
+         <span class="offerlogo"><a href="#"><h3>Shop now for exclusive offer</h3></a></span>
+        </div>
+      </section>
+
+      <section class="extra">
+
+      </section>
+
        <section id="main-pro-container">
       <?php
       $limit = 4;
@@ -49,16 +58,18 @@ require('config.php');
       foreach($get_product as $list){
 
       
-      echo"<div class='container-pro'>
+      echo"<div class='faltu' style='margin-top: -29%;'>
+      <div class='container-pro'>
             <div class='prot'>
                 <a href='product.php?id=". $list["id"]."'>
                     <img src='".PRODUCT_IMAGE_SITE_PATH.$list["image"]."' alt=''>
                 </a>
                 <div class='box1'>
                 <span class='boxing _pr'> <a href='#'>". $list["name"]."</a></span>
-                    <span class='boxing2 _pr'><b>MRP:". $list["mrp"]."</b></span>        
-                   <span class=' _pr'><b>PRICE:". $list["price"]."</b></span></div>        
+                    <span class='boxing2 _pr'><b>&#8377;<del>". $list["mrp"]."</del></b></span>        
+                   <span class=' _pr'><b>&#8377;". $list["price"]."</b></span></div>        
         </div>  
+        </div>
         </div>
         ";}?>
       </section>
