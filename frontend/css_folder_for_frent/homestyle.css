@@ -7,11 +7,12 @@
 section#main-pro-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    height: 430vh;
-    margin-left: -1%;
+    height: 540vh;
+    margin-left: 2%;
     margin-top: 15%;
+    width: 82%;
 }
 .prot {
     width: 70%;
@@ -29,7 +30,12 @@ span.boxing a{
     font-weight: 600;
 }
 ._pr{
-    margin-left: 52%;
+    margin-left: 80%;
+}
+.pr1{
+    display: inline-flex;
+    margin-left: 41px;
+    margin-top: 4px;
 }
 .navbar{
     height: 10vh;
@@ -286,6 +292,7 @@ h4{
     margin-left: -16px;
 }
 .mai{
+    display: inline-flex;
     margin-left: 190px;
     margin-top: 13px;
 }.wish{

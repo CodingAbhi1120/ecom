@@ -50,8 +50,8 @@ require('config.php');
       <section class="extra">
 
       </section>
-
        <section id="main-pro-container">
+        
       <?php
       $limit = 4;
       $get_product = get_product($conn,'');
@@ -66,8 +66,9 @@ require('config.php');
                 </a>
                 <div class='box1'>
                 <span class='boxing _pr'> <a href='#'>". $list["name"]."</a></span>
+                <div class='pr1'>
                     <span class='boxing2 _pr'><b>&#8377;<del>". $list["mrp"]."</del></b></span>        
-                   <span class=' _pr'><b>&#8377;". $list["price"]."</b></span></div>        
+                   <span class=' _pr'><b>&#8377;". $list["price"]."</b></span></div>  </div>      
         </div>  
         </div>
         </div>

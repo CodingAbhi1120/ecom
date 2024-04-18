@@ -78,10 +78,12 @@
 }
 .mrp3{
    margin-top: 8%;
-} .mai{
-    margin-left: 225px;
-    margin-top: 13px;
-    font-size:x-large;
+}
+ .mai{
+    margin-left: 190px;
+    margin-top: 2px;
+    padding-bottom: 5%;
+    font-size: x-large;
 }
 .product-name{
     flex-wrap: wrap;
@@ -219,4 +221,7 @@ form textarea{
     border: 2px solid black;
     border-radius: 11px;
     padding:1 4px;
+}
+.wholebody{
+    padding-right: 25%;
 }

@@ -13,11 +13,11 @@ $get_cat = get_cat($conn,'', $cat_id,'');
     <link rel="stylesheet" href="css_folder_for_frent/categories.css?v=<?=$version?>">
 </head>
 <body>
-    <div class="wholebody">
+   
     <div class="main_products">
        
         <div class="inner-content">
-            <!-- # men wear -->
+            
         </div>
     </div>
 
@@ -28,7 +28,9 @@ $get_cat = get_cat($conn,'', $cat_id,'');
         <?php
         foreach($get_cat as $list){
         ?>
+         
         <div class="pro-container">
+        <div class="wholebody">
             <div class="prot">
                 <a class="underpro" href="product.php?id=<?php echo $list['id']?>">
                     <img src="<?php echo PRODUCT_IMAGE_SITE_PATH.$list['image']?>" alt="">
@@ -41,8 +43,9 @@ $get_cat = get_cat($conn,'', $cat_id,'');
                    &nbsp;&nbsp;<span><b>&#8377;<?php echo $list['price']?></b></span>        
         </div>
             </div>
-        </div><?php }?>
         </div>
+        </div><?php }?>
+        
     </section>
     <?php
     } else {
